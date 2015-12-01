@@ -1,6 +1,7 @@
 from bs4 import BeautifulSoup as b
 import requests
-
+import json
+file = open('nation_data.txt','a')
 i = 1
 
 dic = {}
@@ -21,3 +22,5 @@ while True:
 	else:
 		print 546666666666666666666666666666666666666665
 		break
+
+json.dump(dic,file)
